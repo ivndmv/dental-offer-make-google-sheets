@@ -1,0 +1,171 @@
+/*
+Theme Name: calc
+Theme URI: 
+Author: 
+Author URI: 
+Description: 
+Requires at least: 6.0
+Tested up to: 6.4.1
+Requires PHP: 5.7
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: calc
+Tags: blog, grid-layout, one-column, two-columns, four-columns, left-sidebar, right-sidebar, wide-blocks, accessibility-ready, block-patterns, block-styles, buddypress, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, footer-widgets, front-page-post-form, full-site-editing, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, style-variations, template-editing, theme-options, threaded-comments, translation-ready, 
+*/
+
+body {
+  font-family: sans-serif;
+}
+
+.category-container {
+    margin: 15px 0px;
+}
+div#form-container select, div#form-container input {
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+div#all-container {
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  gap: 25px;
+  /* flex-wrap: wrap; */
+}
+
+div#form-container, div#result-container {
+  width: 50%;
+}
+
+.add-button {
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 29px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #143505;
+  font-size: 32px;
+  /* border-right: 3px solid #00000033; */
+  /* border-left: 3px solid #0000002b; */
+  /* border-bottom: 3px solid #00000030; */
+  /* border-top: 3px solid #e3f4ff30; */
+}
+
+.price-table {
+  margin-bottom: 25px;
+  margin-top: 5px;
+  display: grid;
+  border: 1px solid #000;
+}
+
+.table-total-container {
+  order: 999;
+  text-align: right;
+  border: 1px solid;
+  border-top: none;
+  padding: 5px;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#result-container table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #result-container table td, #result-container table th {
+    border: 1px solid #000;
+    padding: 3px;
+    overflow-wrap: anywhere;
+}
+
+#result-container table th {
+  padding: 3px;
+  text-align: left;
+}
+#result-container table tfoot {
+  font-weight:bold;
+}
+
+button.edit-table {
+  padding: 0 10px;
+  margin: 0;
+  font-size: 14px;
+}
+
+button {
+    margin: 20px 0;
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+
+#template-box {
+  display: none;
+}
+.template-box-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.template-header, .template-footer {
+  display: none;
+}
+
+div#grand-total {
+  text-align: right;
+}
+
+textarea.edit-cell-textarea {
+  width: 100%;
+  height: 150px;
+}
+
+button:disabled {
+  background: grey;
+}
+
+span.remove-row {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  padding: 1px 1px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 7px;
+}
+
+.edit-cell-quantity {
+  width: 100%;
+  border: 1px solid;
+  height: 25px;
+  text-align: center;
+}
